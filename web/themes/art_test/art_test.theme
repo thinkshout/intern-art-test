@@ -1,0 +1,108 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the art_test theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for html.html.twig.
+ */
+function art_test_preprocess_html(array &$variables) {
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function art_test_page_attachments_alter(array &$page) {
+}
+
+/**
+ * Implements hook_preprocess_page() for page.html.twig.
+ */
+function art_test_preprocess_page(array &$variables) {
+}
+
+/**
+ * Implements hook_preprocess_page_title() for page.html.twig.
+ */
+function art_test_preprocess_page_title(&$variables) {
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for form templates.
+ */
+function art_test_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+}
+
+/**
+ * Implements hook_theme_suggestions_node_alter().
+ */
+function art_test_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for Block document templates.
+ */
+function art_test_preprocess_block(array &$variables) {
+}
+
+/**
+ * Implements hook_theme_suggestions_field_alter().
+ */
+function art_test_theme_suggestions_field_alter(array &$suggestions, array $variables) {
+}
+
+/**
+ * Implements hook_theme_suggestions_field_alter().
+ */
+function art_test_theme_suggestions_fieldset_alter(array &$suggestions, array $variables) {
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function art_test_preprocess_node(array &$variables) {
+}
+
+/**
+ * Implements hook_theme_suggestions_views_view_alter().
+ */
+function art_test_theme_suggestions_views_view_alter(array &$suggestions, array $variables) {
+}
+
+/**
+ * Implements hook_preprocess_form().
+ */
+function art_test_preprocess_form(array &$variables) {
+}
+
+/**
+ * Implements hook_preprocess_select().
+ */
+function art_test_preprocess_select(array &$variables) {
+}
+
+/**
+ * Implements hook_preprocess_field().
+ */
+function art_test_preprocess_field(array &$variables, $hook) {
+}
+
+/**
+ * Implements hook_preprocess_details().
+ */
+function art_test_preprocess_details(array &$variables) {
+}
+
+/**
+ * Implements hook_theme_suggestions_details_alter().
+ */
+function art_test_theme_suggestions_details_alter(array &$suggestions, array $variables) {
+}
+
+/**
+ * Implements hook_preprocess_menu_local_task().
+ */
+function art_test_preprocess_menu_local_task(array &$variables) {
+}

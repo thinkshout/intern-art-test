@@ -1,0 +1,16 @@
+name: art_test
+type: theme
+description: A sub theme for Bene
+package: Other
+core: 8.x
+libraries:
+  - art_test/art_test
+
+base theme: bene_parent
+
+regions:
+  site_branding: Site Branding
+  primary_nav: Primary Nav
+  secondary_nav: Secondary Nav
+  content: Content
+  footer: Footer

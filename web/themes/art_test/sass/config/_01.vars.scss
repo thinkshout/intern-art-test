@@ -1,0 +1,199 @@
+$vars: (
+  //Colors
+        color-primary-a: #00D2E6, //light blue
+        color-primary-b: #00A1B8, //dark blue
+        color-primary-c: #ffffff, //white
+        color-primary-d: #000000, //black
+        color-primary-e: #129FB5, //dark grey
+        color-secondary-a: '#F5F5F5',
+        color-secondary-b: '',
+        color-secondary-c: '',
+        color-secondary-d: '',
+        color-secondary-e: '',
+
+  //Fonts
+        font-family-primary: "'Work Sans', sans-serif",
+        font-family-secondary: "'Oswald', sans-serif",
+        font-weight-regular: 400,
+        font-weight-medium: 600,
+        font-weight-bold: 700,
+        font-weight-black: 800,
+        font-style-italic: italic,
+        font-style-normal: normal,
+
+  //Logo & Icons
+        logo-height: 100px,
+        social-media-icon-height: 2.25rem,
+
+  //Buttons & Inputs
+        button-padding: 2rem,
+        input-height: 100px
+);
+
+:root{
+  @each $key, $value in $vars {
+    #{--$key}: #{$value};
+  }
+}
+
+/* ==============================
+            BASE STYLING
+   ============================== */
+
+%h1{
+  font-size: 65px;
+  line-height: 55px;
+  font-weight: 400;
+}
+
+%h2 {
+  font-size: 55px;
+  line-height: 65px;
+  font-weight: 400;
+}
+
+%h3 {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 400;
+}
+
+%h4 {
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 400;
+}
+
+%h5{
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400;
+}
+
+%button{
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  border-radius: 0;
+  @include vars(color, color-primary-c);
+  @include vars(background-color, color-primary-a);
+}
+
+%button-hover{
+  @include vars(background-color, color-primary-b);
+}
+
+/* ==============================
+            Site Header
+   ============================== */
+
+%site-header{
+  @include vars(background-color, color-primary-c);
+}
+
+%primary-nav-region{
+  @include vars(background-color, color-primary-c);
+}
+
+%menu-link{
+  @include vars(color, color-primary-d);
+}
+
+%main-menu-button{
+  &:last-child a{
+    @include vars(background-color, color-primary-a);
+    @include vars(color, color-primary-c);
+    border-radius: 0;
+    width: 100px;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    &:focus, &:active, &:hover{
+      @include vars(background-color, color-primary-b);
+    }
+  }
+}
+
+
+/* ==============================
+          Sub Navigation
+   ============================== */
+
+/* ==============================
+        Home Page Feature
+   ============================== */
+
+/* ==============================
+               Tiles
+   ============================== */
+
+%tiles-background{
+  @include vars(background-color, color-primary-c);
+}
+
+%individual-tiles{
+  border-bottom-right-radius: 0;
+  text-align: center;
+}
+
+/* ==============================
+         Rich Text - Intro
+   ============================== */
+
+
+/* ==============================
+    Full Width Feature Paragraph
+   ============================== */
+
+%full-width-pargph{
+  &:before{
+    background: linear-gradient(#00D2E6, #000000);
+  }
+}
+
+/* ==============================
+           Listing Page
+   ============================== */
+
+
+/* ==============================
+           Inline Embeds
+   ============================== */
+
+
+/* ==============================
+            Events Page
+   ============================== */
+
+
+/* ==============================
+            Updates Page
+   ============================== */
+
+
+/* ==============================
+        General Page Settings
+   ============================== */
+
+
+/* ==============================
+        Newsletter
+   ============================== */
+%newsletter{
+  background-image: none;
+  @include vars(background-color, color-secondary-a);
+}
+
+%newsletter-a{
+  @include vars(color, color-primary-a);
+  &:hover{
+    @include vars(color, color-primary-b);
+  }
+}
+
+/* ==============================
+            Site Footer
+   ============================== */
+
+
+/* ==============================
+      Tools & Repetitive Things
+   ============================== */
