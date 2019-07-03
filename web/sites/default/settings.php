@@ -281,7 +281,6 @@ $config_directories = [];
  * @endcode
  */
 $settings['hash_salt'] = '_LnDZwV9YsKpywYndQOkZCn7KOr10tco9OZnKxFLvGwuCnfQGsj33q4-ikciX_27YXqPhIMp3Q';
-$settings['hash_salt'] = '';
 
 /**
  * Deployment identifier.
@@ -675,7 +674,7 @@ if ($settings['hash_salt']) {
  */
 
 $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
-$settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
+$settings['container_yamls'][] = DRUPAL_ROOT . '/' . $site_path . '/services.yml';
 
 /**
  * Override the default service container class.
