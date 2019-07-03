@@ -1,0 +1,12 @@
+uuid: 590b0065-94f9-4e72-84c1-3773b9e901b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: I96Wg1zkC_ifckgDqnlaevl6IHNCdyIMmmsckbYTeag
+id: media.thumbnail
+label: Thumbnail
+targetEntityType: media
+cache: true

@@ -1,0 +1,12 @@
+uuid: d0e4ca17-af26-4ab4-8951-b3f599b7602e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 0mGgTdSnEt0eom8xlAiENDZcrcGV1DA2ghsIqKhppeE
+id: media.paragraph
+label: Paragraph
+targetEntityType: media
+cache: true

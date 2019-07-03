@@ -1,0 +1,22 @@
+uuid: dc9cc136-349d-4426-b7b7-e3753eb338e3
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - art_test
+_core:
+  default_config_hash: W0mYAfYiK1TnN1KQMfsjhEgZ-hItJukPBAib9Yj613Y
+id: art_test_help
+theme: art_test
+region: secondary_nav
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

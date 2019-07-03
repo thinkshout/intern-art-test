@@ -1,0 +1,21 @@
+uuid: 536e867e-58aa-4be5-8357-c093825d87de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.tile
+_core:
+  default_config_hash: _WwpFaM5P0HLFM5gJII2eOVT476sP39RZ_ZFYjEzW6g
+id: paragraph.tile.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: tile
+label: Title
+description: '(suggested word count: ≤ 10)'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

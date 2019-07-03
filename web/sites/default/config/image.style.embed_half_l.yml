@@ -1,0 +1,17 @@
+uuid: acbbd971-4f0a-452b-b8cb-589a2d9262a4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: duZ0zOWBt_Ygdo9GFGkExLJyFKLNORMwBQo2Anc8BpE
+name: embed_half_l
+label: Embed-Half-L
+effects:
+  bb0a0c09-a418-43d0-bf30-9a14d9450867:
+    uuid: bb0a0c09-a418-43d0-bf30-9a14d9450867
+    id: image_scale
+    weight: 1
+    data:
+      width: 400
+      height: null
+      upscale: false

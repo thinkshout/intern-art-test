@@ -1,0 +1,22 @@
+uuid: 04bf0282-c0d6-460f-943a-804d8818827c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bene_parent
+_core:
+  default_config_hash: 29eUEviS6I1wD-fVkCuY3diZNL9fut9r-ued0N80w5M
+id: bene_parent_messages
+theme: bene_parent
+region: content
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

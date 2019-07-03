@@ -1,0 +1,26 @@
+uuid: 4233490d-00b9-461d-a205-6e85cbb8394e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.embedded
+    - core.entity_view_mode.media.embedded_half
+  module:
+    - entity_embed
+    - media
+_core:
+  default_config_hash: 6KgNPvTJLHHx-iHraLZuSenQTrFF0-cVHwMv785YF0I
+label: 'Media browser'
+id: media_browser
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles: {  }
+  display_plugins:
+    - 'view_mode:media.embedded'
+    - 'view_mode:media.embedded_half'
+  entity_browser: media_browser
+  entity_browser_settings:
+    display_review: false
+icon_uuid: null
+icon_path: /modules/contrib/bene_media/images/media_embed_icon.png

@@ -1,0 +1,12 @@
+uuid: 39cd2da7-7ed8-47ce-b64a-949b1e27d8d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 8K08ncVdgMk5KLLLZ0ePSqZO-sKyhxS-sHy-DomL-hI
+id: media.tile
+label: Tile
+targetEntityType: media
+cache: true

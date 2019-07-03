@@ -1,0 +1,19 @@
+uuid: 74483350-6702-48d0-8697-6217bce67fa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title
+    - node.type.art_piece
+id: node.art_piece.field_title
+field_name: field_title
+entity_type: node
+bundle: art_piece
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

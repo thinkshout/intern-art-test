@@ -1,0 +1,22 @@
+uuid: 2acdb2be-4972-4225-a9ac-752facedb6a0
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - bene_parent
+_core:
+  default_config_hash: rhMCLaaFDCc-hUCuDDqJrbY-bYwLTtj9zEmQZV3vnX0
+id: bene_parent_search
+theme: bene_parent
+region: secondary_nav
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,60 @@
+uuid: 0f51c1b6-db47-4144-8a91-ed2297e9dce5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bene_background_image_hero
+    - field.field.block_content.bene_background_image_hero.bene_background_image_hero
+    - field.field.block_content.bene_background_image_hero.bene_lead
+    - field.field.block_content.bene_background_image_hero.bene_link
+    - field.field.block_content.bene_background_image_hero.bene_title
+    - responsive_image.styles.background_hero
+  module:
+    - link
+    - picture_background_formatter
+_core:
+  default_config_hash: IkEYf92Gi35WkAuFCQKh2vHLjCV8VDruvP2YGbhGmJc
+id: block_content.bene_background_image_hero.default
+targetEntityType: block_content
+bundle: bene_background_image_hero
+mode: default
+content:
+  bene_background_image_hero:
+    weight: 4
+    label: hidden
+    settings:
+      responsive_image_style: background_hero
+      selector: '#block-benehomepagefeature'
+      image_link: ''
+    third_party_settings: {  }
+    type: picture_background_formatter_media
+    region: content
+  bene_lead:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  bene_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  bene_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

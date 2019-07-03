@@ -1,0 +1,10 @@
+uuid: 7c5340d7-3acd-4b39-b25f-669c686ef4ff
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ml90xVErGON1bkoAwXBTHdug3urZJxFtTWP91ZnVIZ4
+id: bene_background_image_hero
+label: 'Background Image Hero'
+revision: 0
+description: ''

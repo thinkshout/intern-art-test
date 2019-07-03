@@ -1,0 +1,22 @@
+uuid: 94c3be9c-b928-4665-b3cc-2727932319fe
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - art_test
+_core:
+  default_config_hash: pEnQTWMGtIAuzESxOqhhgcSVvZljX2ze5jyUoOCEChs
+id: art_test_search
+theme: art_test
+region: secondary_nav
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

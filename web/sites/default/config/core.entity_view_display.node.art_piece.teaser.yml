@@ -1,0 +1,44 @@
+uuid: 239402e8-0d07-4f1f-ab24-dfea229e91a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.art_piece.body
+    - field.field.node.art_piece.field_image
+    - field.field.node.art_piece.field_medium
+    - field.field.node.art_piece.field_title
+    - node.type.art_piece
+  module:
+    - image
+    - user
+id: node.art_piece.teaser
+targetEntityType: node
+bundle: art_piece
+mode: teaser
+content:
+  field_image:
+    type: image
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_title:
+    type: string
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_medium: true

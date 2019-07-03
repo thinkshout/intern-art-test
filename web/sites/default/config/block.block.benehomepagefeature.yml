@@ -1,0 +1,29 @@
+uuid: 1a4479d1-e252-4487-a869-23777d7e2754
+langcode: en
+status: true
+dependencies:
+  module:
+    - bene_hero_block
+    - system
+  theme:
+    - bene_child
+_core:
+  default_config_hash: cK67soWOkhvKFowpsAZnaLNfc_F3td-LRxLhTg7BpCI
+id: benehomepagefeature
+theme: bene_child
+region: content
+weight: -4
+provider: null
+plugin: bene_home_page_feature_block
+settings:
+  id: bene_home_page_feature_block
+  label: 'Bene home page feature'
+  provider: bene_core
+  label_display: '0'
+  block_id: '1'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

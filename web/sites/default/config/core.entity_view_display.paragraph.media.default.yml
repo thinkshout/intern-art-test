@@ -1,0 +1,32 @@
+uuid: dd7b524d-6a8a-4565-b8ac-2a2ef5f3cc82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media.field_caption
+    - field.field.paragraph.media.field_media
+    - paragraphs.paragraphs_type.media
+_core:
+  default_config_hash: rbB8p-CwpTbGtnC7HaMEY2VkwAjW_BxXx_bQ6SPV8Hw
+id: paragraph.media.default
+targetEntityType: paragraph
+bundle: media
+mode: default
+content:
+  field_caption:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_media:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: paragraph
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

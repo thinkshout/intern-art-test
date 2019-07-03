@@ -1,0 +1,10 @@
+uuid: 50b32e14-b7e8-4e47-8c03-ad874cbcc8c4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: IqcXpcTlXGuenFx5rl4s_ZW0xg1gCFu_aD9FA6ieDmA
+name: 'Media tags'
+vid: media_tags
+description: 'Tags for organizing media items.'
+weight: 0

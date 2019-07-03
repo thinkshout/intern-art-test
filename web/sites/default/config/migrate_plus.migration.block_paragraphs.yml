@@ -1,0 +1,110 @@
+uuid: 8d2088a8-a94e-42fb-a8df-2ed8893fe98f
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - bene_media
+      - bene_migrate_google_sheets
+_core:
+  default_config_hash: QbjXCRsBaWGPTpj9vH5rmbeOvklox6B3tkvhmALe51k
+id: block_paragraphs
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: bene
+label: 'University of Chicago block paragraphs with Google Spreadsheet'
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: google_sheets
+  item_selector: ''
+  urls: 'https://spreadsheets.google.com/feeds/list/1BkC1_65t5D4ZoDhTb0F0wlngPYBcZgwin7v45UYydFc/5/public/values?alt=json'
+  fields:
+    -
+      name: id
+      label: ID
+      selector: id
+    -
+      name: paragraphtype
+      label: 'Paragraph Type'
+      selector: paragraphtype
+    -
+      name: image
+      label: Image
+      selector: image
+    -
+      name: imagealt
+      label: 'Image Alt'
+      selector: imagealt
+    -
+      name: linkuri
+      label: 'Link URI'
+      selector: linkuri
+    -
+      name: linktitle
+      label: 'Link Title'
+      selector: linktitle
+    -
+      name: title
+      label: Title
+      selector: title
+    -
+      name: text
+      label: Text
+      selector: text
+    -
+      name: media
+      label: Media
+      selector: media
+    -
+      name: caption
+      label: Caption
+      selector: caption
+    -
+      name: tiles
+      label: Tiles
+      selector: tiles
+    -
+      name: content
+      label: Content
+      selector: content
+  ids:
+    id:
+      type: integer
+process:
+  type: paragraphtype
+  field_title: title
+  field_link/uri:
+    plugin: link_url_import
+    source: linkuri
+  field_link/title: linktitle
+  field_background_image/target_id:
+    plugin: media_import
+    source: image
+    process:
+      bundle: image
+      image/alt: imagealt
+  field_image/target_id:
+    plugin: media_import
+    source: image
+    process:
+      bundle: image
+      image/alt: imagealt
+  field_media:
+    plugin: migration
+    source: media
+    migration: media
+  field_text: text
+  field_caption: caption
+  bene_content:
+    plugin: entity_reference_revisions
+    source: content
+    migration: block_paragraphs
+    delimiter: ;
+destination:
+  plugin: 'entity:paragraph'
+migration_dependencies:
+  required:
+    - media

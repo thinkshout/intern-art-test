@@ -1,0 +1,20 @@
+uuid: 96cae415-aaa6-4e73-92f6-97b6e8c0d57c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: vPdCXziTfCca1WcY4-ZOYPNV8SuqJ1Y5XeRNIuhRMcM
+name: Event
+type: event
+description: 'Content associated with a specific date.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

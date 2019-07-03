@@ -1,0 +1,25 @@
+uuid: ee6c6bf2-537b-4d8a-b85b-b852286e4bb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.bene_metatags
+    - node.type.page
+  module:
+    - metatag
+_core:
+  default_config_hash: HfljG1Uk8j_Zhln01lNxqTXcHH_mhxkBM3Z0y0oJcDo
+id: node.page.bene_metatags
+field_name: bene_metatags
+entity_type: node
+bundle: page
+label: Metatags
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

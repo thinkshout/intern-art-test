@@ -1,0 +1,19 @@
+uuid: b7492773-73dd-484a-bae6-0450c0dba311
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: m3C9gBqzmuz7mKreuKhHzVcfEylgFoa2h9jrFRc_pXc
+name: homepage_hero_s
+label: 'Homepage Hero-S'
+effects:
+  d4894aa4-ed30-4fba-a7c7-0cf167b4cc29:
+    uuid: d4894aa4-ed30-4fba-a7c7-0cf167b4cc29
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 240
+      crop_type: focal_point

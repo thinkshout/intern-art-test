@@ -1,0 +1,27 @@
+uuid: 4db5e9ef-9915-4d22-85ba-42a1a1f230fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bene_child
+_core:
+  default_config_hash: qc1hxBHakw4dO1QjDMEqa_0GxaQ4HTTmD1AGeu2iO0c
+id: bene_child_page_title
+theme: bene_child
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

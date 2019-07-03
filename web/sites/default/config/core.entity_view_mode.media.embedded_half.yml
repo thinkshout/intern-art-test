@@ -1,0 +1,12 @@
+uuid: 2da2bfec-5d62-4a02-8ec5-ff78c637606c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: kl40LKrUj8aesamCnlb2RbG8i_RzMHuA23rW3pV988w
+id: media.embedded_half
+label: 'Embedded Half'
+targetEntityType: media
+cache: true

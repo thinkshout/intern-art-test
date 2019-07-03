@@ -1,0 +1,30 @@
+uuid: 500e704b-bb51-4106-97cf-7def3e91126f
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.embed_half_l
+    - image.style.embed_half_m
+    - image.style.embed_half_s
+_core:
+  default_config_hash: hOsSkbrKITnIHNtoOVtuIuZSFCNgqio9xKkO_Ja34Nw
+id: embed_half
+label: 'Embed Half'
+image_style_mappings:
+  -
+    breakpoint_id: bene.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: embed_half_l
+  -
+    breakpoint_id: bene.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: embed_half_m
+  -
+    breakpoint_id: bene.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: embed_half_s
+breakpoint_group: bene_parent
+fallback_image_style: embed_half_s

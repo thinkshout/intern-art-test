@@ -1,0 +1,20 @@
+uuid: fbb0696c-ff91-415d-94cc-3ad6da76345b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - art_test
+_core:
+  default_config_hash: jDeecEvblwGk8sZSGNtG6be6UVHXpehWhEZSiMgDcZU
+id: art_test_local_actions
+theme: art_test
+region: content
+weight: -9
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

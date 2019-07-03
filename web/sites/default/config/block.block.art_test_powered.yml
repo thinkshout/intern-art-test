@@ -1,0 +1,22 @@
+uuid: 50962547-b0c1-49fb-b1ce-d5566a4adef1
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - art_test
+_core:
+  default_config_hash: qo1_SIeGcdrd0VCUFO-f4_FMg6wB0RBQwQlJj0I7h4w
+id: art_test_powered
+theme: art_test
+region: secondary_nav
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,35 @@
+uuid: 264e20c0-8b51-42b7-90fa-ff58ee2363c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.paragraph
+    - field.field.media.video.field_media_video_embed_field
+    - field.field.media.video.media_tags
+    - media.type.video
+  module:
+    - video_embed_field
+_core:
+  default_config_hash: gRKBMz3J7cPqaVpSuzXCDJCxVkK8-fSutb4Kz2-EHsY
+id: media.video.paragraph
+targetEntityType: media
+bundle: video
+mode: paragraph
+content:
+  field_media_video_embed_field:
+    type: video_embed_field_video
+    weight: 0
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  media_tags: true
+  name: true
+  thumbnail: true
+  uid: true

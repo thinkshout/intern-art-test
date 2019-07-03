@@ -1,0 +1,27 @@
+uuid: 186746ce-7d3e-4c51-abd4-77b86c9a15b1
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - bene_parent
+_core:
+  default_config_hash: 3ApY_ZWpgFfeLWAsgzBUgyHKGiwvQiW2u8ie_SofMmc
+id: bene_parent_tools
+theme: bene_parent
+region: secondary_nav
+weight: -3
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

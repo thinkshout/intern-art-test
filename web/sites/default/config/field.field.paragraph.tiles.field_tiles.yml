@@ -1,0 +1,45 @@
+uuid: f03144ff-b1d6-4f39-ae69-fdd3e978799f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tiles
+    - paragraphs.paragraphs_type.tile
+    - paragraphs.paragraphs_type.tiles
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: JkNyG-BLrhxIlNPvIs8sAt4QK9Nyu1roVWUJmnlWobw
+id: paragraph.tiles.field_tiles
+field_name: field_tiles
+entity_type: paragraph
+bundle: tiles
+label: Tiles
+description: 'Add additional tiles with the “Add Tile” button. (Recommendation: place tiles in sets of three and not to exceed 6 total, or two rows, of tiles)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      tile: tile
+    target_bundles_drag_drop:
+      feature_full_width:
+        weight: 4
+        enabled: false
+      rich_text:
+        weight: 5
+        enabled: false
+      tiles:
+        weight: 6
+        enabled: false
+      media:
+        weight: 7
+        enabled: false
+      tile:
+        enabled: true
+        weight: 9
+field_type: entity_reference_revisions

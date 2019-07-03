@@ -1,0 +1,22 @@
+uuid: 0271b4f0-cfbe-4ddb-825c-873e2df83fe2
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - node
+_core:
+  default_config_hash: mFivni5E6binOJLkHKlut4zXi0wQb6UjDofTTNYEmhI
+id: node.bene_event_date_range
+field_name: bene_event_date_range
+entity_type: node
+type: daterange
+settings:
+  datetime_type: datetime
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

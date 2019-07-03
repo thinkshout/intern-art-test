@@ -1,0 +1,30 @@
+uuid: 1b4006ad-b625-4812-9057-4ce221ca5f0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.media_tags
+    - media.type.image
+    - taxonomy.vocabulary.media_tags
+_core:
+  default_config_hash: cZU6fnjZ9Y_Z2ZoWdSEEuucSpkcWkTpYwSZRSJAmJJw
+id: media.image.media_tags
+field_name: media_tags
+entity_type: media
+bundle: image
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      media_tags: media_tags
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

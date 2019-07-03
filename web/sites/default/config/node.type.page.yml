@@ -1,0 +1,22 @@
+uuid: 12dc6542-97fa-4b03-b2e7-55325c394fd3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+      - utility
+    parent: 'main:'
+_core:
+  default_config_hash: thIF1pSunUJPzkf-fGJgPRCVW5HqTUYkIambhc02vVc
+name: Page
+type: page
+description: 'Use <em>pages</em> for your static content, such as an ''About us'' page.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

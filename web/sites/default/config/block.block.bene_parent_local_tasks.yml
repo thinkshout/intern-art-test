@@ -1,0 +1,22 @@
+uuid: a9c772eb-ab21-4251-b83d-69fdb4008443
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bene_parent
+_core:
+  default_config_hash: lyBIYrksLcC097sKfOSP1Ef01J7xcuus4P1R5iFipTw
+id: bene_parent_local_tasks
+theme: bene_parent
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

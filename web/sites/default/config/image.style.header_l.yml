@@ -1,0 +1,19 @@
+uuid: 8fd772bd-cdea-42a9-8090-2cf848f7d1dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: h8qO2aCWQ8rtybuCMD0gA5adESyCfLJ3Rvvh--2av_A
+name: header_l
+label: Header-L
+effects:
+  8b6b4794-fd8f-419c-b073-6e925f6db23a:
+    uuid: 8b6b4794-fd8f-419c-b073-6e925f6db23a
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1440
+      height: 375
+      crop_type: focal_point

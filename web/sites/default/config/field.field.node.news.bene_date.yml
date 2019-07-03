@@ -1,0 +1,26 @@
+uuid: f9593275-92a7-42e5-b09e-443096948b31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.bene_date
+    - node.type.news
+  module:
+    - datetime
+_core:
+  default_config_hash: _35ulzdgdPwq0QQbPe2DSN3v2GswCYrRNPqFgx6xBls
+id: node.news.bene_date
+field_name: bene_date
+entity_type: node
+bundle: news
+label: 'Publish Date'
+description: 'Date displayed to the public for this content.'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

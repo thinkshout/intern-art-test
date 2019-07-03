@@ -1,0 +1,21 @@
+uuid: 958f4a8f-187a-498f-a808-8a8a90400d60
+langcode: en
+status: true
+dependencies:
+  module:
+    - metatag
+    - node
+_core:
+  default_config_hash: tyts4CiE1zngQkFCHu8E1YZLzocU9o5NttsHnFlZ68w
+id: node.bene_metatags
+field_name: bene_metatags
+entity_type: node
+type: metatag
+settings: {  }
+module: metatag
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

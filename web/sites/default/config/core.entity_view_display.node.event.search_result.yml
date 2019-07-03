@@ -1,0 +1,66 @@
+uuid: 29bac544-bb7b-4461-addf-1a51bf522842
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.event.bene_content
+    - field.field.node.event.bene_event_date_range
+    - field.field.node.event.bene_event_location
+    - field.field.node.event.bene_header_media
+    - field.field.node.event.bene_intro
+    - field.field.node.event.bene_metatags
+    - image.style.tile_m
+    - node.type.event
+  module:
+    - address
+    - bene_core
+    - datetime_range
+    - media
+    - user
+_core:
+  default_config_hash: 1PQcqWa1llZWCyrHMMuairn0dPB121rob_Fe5RTna9w
+id: node.event.search_result
+targetEntityType: node
+bundle: event
+mode: search_result
+content:
+  bene_event_date_range:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: bene_date_time
+      separator: '-'
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  bene_event_location:
+    weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  bene_header_media:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: tile_m
+      image_link: content
+    third_party_settings: {  }
+    type: media_thumbnail
+    region: content
+  bene_intro:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    type: bene_fallback_summary
+    region: content
+hidden:
+  bene_content: true
+  bene_metatags: true
+  body: true
+  links: true

@@ -1,0 +1,22 @@
+uuid: fbfc5959-7df1-4118-980f-6c4bb2215cfc
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bene_child
+_core:
+  default_config_hash: qo1_SIeGcdrd0VCUFO-f4_FMg6wB0RBQwQlJj0I7h4w
+id: bene_child_powered
+theme: bene_child
+region: secondary_nav
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

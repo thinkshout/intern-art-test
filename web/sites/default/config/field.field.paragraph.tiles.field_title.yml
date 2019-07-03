@@ -1,0 +1,21 @@
+uuid: a7ba937c-c89e-4388-bb0b-baa6144517a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.tiles
+_core:
+  default_config_hash: PZsfbL-xTtpA2ha7u01b_-mFEvUNd6RB9eKY1Yk0iUQ
+id: paragraph.tiles.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: tiles
+label: Title
+description: 'An optional title for this group of tiles that will be displayed centered above the tiles.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

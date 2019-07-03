@@ -1,0 +1,45 @@
+uuid: 02ba9e21-10e4-49ee-870b-b229bf69f4f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.bene_content
+    - node.type.news
+    - paragraphs.paragraphs_type.tile
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 39F1aJLAsY_4pCcA6hySJ-5jgzqc4BTwOTF-RpSf0Ec
+id: node.news.bene_content
+field_name: bene_content
+entity_type: node
+bundle: news
+label: Content
+description: 'This is where you stack the content you want to add to your page.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles:
+      tile: tile
+    target_bundles_drag_drop:
+      rich_text:
+        weight: -11
+        enabled: false
+      media:
+        weight: -10
+        enabled: false
+      feature_full_width:
+        weight: -9
+        enabled: false
+      tiles:
+        weight: -8
+        enabled: false
+      tile:
+        enabled: true
+        weight: -7
+field_type: entity_reference_revisions

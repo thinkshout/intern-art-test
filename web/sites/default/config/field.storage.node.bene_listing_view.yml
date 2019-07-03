@@ -1,0 +1,23 @@
+uuid: 63db0865-6c66-4123-8314-01b5c664f6fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - views
+    - viewsreference
+_core:
+  default_config_hash: NWA1_WdJRTaumGZuZl1YPWO2F-nZb0O24YlNwR9UcmY
+id: node.bene_listing_view
+field_name: bene_listing_view
+entity_type: node
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

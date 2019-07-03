@@ -1,0 +1,27 @@
+uuid: 78930f84-aefd-47f5-9b42-e703443a4c49
+langcode: en
+status: true
+dependencies:
+  module:
+    - bene_core
+  theme:
+    - art_test
+_core:
+  default_config_hash: AzI-QwZc74io7roA8DFpJVdDCxmjc7jgeK2fnsaMUvo
+id: art_test_benenewslettersignup
+theme: art_test
+region: footer
+weight: -7
+provider: null
+plugin: bene_newsletter_signup_block
+settings:
+  id: bene_newsletter_signup_block
+  label: 'Bene Newsletter Signup'
+  provider: bene_core
+  label_display: '0'
+  style: external
+  title: 'Sign up for our Newsletter'
+  signup_text: 'Receive updates about what we are doing'
+  external_link: 'http://example.com/'
+  external_link_label: 'Newsletter subscription link'
+visibility: {  }

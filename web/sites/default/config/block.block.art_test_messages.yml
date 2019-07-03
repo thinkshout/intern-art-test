@@ -1,0 +1,22 @@
+uuid: 18997bfd-8e59-4883-9922-15fd7fae5f66
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - art_test
+_core:
+  default_config_hash: bYcjK7799fFXiYP1J4gHa1YFaeOToWlBGbrjP_gMvSs
+id: art_test_messages
+theme: art_test
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

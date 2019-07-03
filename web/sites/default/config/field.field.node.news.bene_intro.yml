@@ -1,0 +1,31 @@
+uuid: f2f0fdd9-4393-4246-b889-9f1d28313601
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.bene_intro
+    - node.type.news
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    restricted_html: restricted_html
+    basic_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: EEMivR4RwhLPmSVcrG5q_NwARscrnV-B2y9i9LpucaY
+id: node.news.bene_intro
+field_name: bene_intro
+entity_type: node
+bundle: news
+label: Introduction
+description: 'This can be used as a one line intro text on the homepage or else an entire block on an interior page. It is wider than the other text content and allows for a feature or more prominence.  (suggested word count: ≤ 150)'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

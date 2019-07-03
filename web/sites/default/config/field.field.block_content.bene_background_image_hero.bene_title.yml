@@ -1,0 +1,21 @@
+uuid: 23309f10-f96e-4063-a7ad-86bb001ec596
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bene_background_image_hero
+    - field.storage.block_content.bene_title
+_core:
+  default_config_hash: zl_-izlwbGfOOUpLsgiL8F0e89vDxumsLi3f3ct5m6A
+id: block_content.bene_background_image_hero.bene_title
+field_name: bene_title
+entity_type: block_content
+bundle: bene_background_image_hero
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 4b076dd7-a0bc-47db-b00f-e5ff6a4afba3
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - bene_parent
+_core:
+  default_config_hash: bRjWk1IvF6ac_z41C59mQTwTcXsTLumDNUJv9dD42aM
+id: bene_parent_help
+theme: bene_parent
+region: secondary_nav
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

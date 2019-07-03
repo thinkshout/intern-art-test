@@ -1,0 +1,27 @@
+uuid: 64168063-4c61-430d-a277-38f8d5fdeb35
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - bene_child
+_core:
+  default_config_hash: GSs5R6OvK0Rnwr9NQxzvOaGnBAuL45fiJgTuIkaosF4
+id: bene_child_main_menu
+theme: bene_child
+region: primary_nav
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

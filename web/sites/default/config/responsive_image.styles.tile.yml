@@ -1,0 +1,30 @@
+uuid: 28021e91-60ab-460d-9958-8df0b03eb15b
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.tile_l
+    - image.style.tile_m
+    - image.style.tile_s
+_core:
+  default_config_hash: oFzLEHCTY-4TNJ6EoIxNHkl-MqDj5abNm1HW4tM7w8U
+id: tile
+label: Tile
+image_style_mappings:
+  -
+    breakpoint_id: bene.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: tile_l
+  -
+    breakpoint_id: bene.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: tile_m
+  -
+    breakpoint_id: bene.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: tile_s
+breakpoint_group: bene_parent
+fallback_image_style: tile_s

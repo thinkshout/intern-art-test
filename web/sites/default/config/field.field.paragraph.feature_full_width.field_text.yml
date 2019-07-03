@@ -1,0 +1,30 @@
+uuid: fa7a8d1a-bfa4-462a-90eb-81d017375d91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.feature_full_width
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    restricted_html: restricted_html
+    basic_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: KXQElm4FcbMEGxLqBsDsFzjaCJ8LOfM8Mn9lbcdXW6I
+id: paragraph.feature_full_width.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: feature_full_width
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,12 @@
+uuid: 48ce3dde-336c-4149-b9c2-6b6384222c6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: Q2f__smqR5bjIrws8dD3mrdzgvk2IL-d6eXt4NQMNRg
+id: media.header
+label: Header
+targetEntityType: media
+cache: true

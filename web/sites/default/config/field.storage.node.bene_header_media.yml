@@ -1,0 +1,22 @@
+uuid: e0419cb8-34eb-4cf6-8cf9-9d7e862ce73f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+_core:
+  default_config_hash: Gj96gJCU7dJA6mmDWYHaON7awVnYY5iw6c31k8AE2FY
+id: node.bene_header_media
+field_name: bene_header_media
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

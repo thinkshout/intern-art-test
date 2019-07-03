@@ -1,0 +1,65 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+format: full_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Underline
+            - HorizontalRule
+            - Blockquote
+            - '-'
+        -
+          name: Linking
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - media_browser
+            - Table
+        -
+          name: 'Block Formatting'
+          items:
+            - Styles
+            - '-'
+            - Format
+        -
+          name: Tools
+          items:
+            - Undo
+            - Redo
+            - Source
+  plugins:
+    stylescombo:
+      styles: "a.button-solid|Button Solid\r\na.button-white|Button White"
+    language:
+      language_list: un
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null
+_core:
+  default_config_hash: 35sR1hBBUswsBMqTl88VSimM5MMCf0msY52xwKWJCcA
+uuid: 23bb4929-7720-4457-a035-669bf829ee2d

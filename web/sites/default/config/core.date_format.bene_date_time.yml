@@ -1,0 +1,10 @@
+uuid: cd340135-e549-4904-8210-9da4f8fb0f57
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KU_X76C8Mv_eW8QNEqV0WUB8_1vKEHOstM1hqkWZLMk
+id: bene_date_time
+label: 'Bene Date/time'
+locked: false
+pattern: 'F j, Y - g:ia'

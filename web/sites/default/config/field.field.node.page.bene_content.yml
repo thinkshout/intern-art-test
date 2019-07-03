@@ -1,0 +1,45 @@
+uuid: 3cc9c890-120f-4247-8a4f-11e8317ba7a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.bene_content
+    - node.type.page
+    - paragraphs.paragraphs_type.tile
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: tWvSBV_yu3RsAdn0xn4uy3Z1R-nkBw3x_iJYBZHfLUo
+id: node.page.bene_content
+field_name: bene_content
+entity_type: node
+bundle: page
+label: Content
+description: 'This is where you stack the content you want to add to your page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles:
+      tile: tile
+    target_bundles_drag_drop:
+      rich_text:
+        weight: -11
+        enabled: false
+      media:
+        weight: -10
+        enabled: false
+      feature_full_width:
+        weight: -9
+        enabled: false
+      tiles:
+        weight: -8
+        enabled: false
+      tile:
+        enabled: true
+        weight: -7
+field_type: entity_reference_revisions

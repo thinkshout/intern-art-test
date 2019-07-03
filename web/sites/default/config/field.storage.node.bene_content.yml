@@ -1,0 +1,23 @@
+uuid: 246544f4-818f-4ee0-a497-4168b6ff40ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+_core:
+  default_config_hash: 3OYEsD68v7L_QVfc6QVu8iGO7y5CCI7w3kQDPcpCBHM
+id: node.bene_content
+field_name: bene_content
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

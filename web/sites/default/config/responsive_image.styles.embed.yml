@@ -1,0 +1,30 @@
+uuid: e87abbec-fa3c-4af1-802a-0e575d818565
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.embed_l
+    - image.style.embed_m
+    - image.style.embed_s
+_core:
+  default_config_hash: dQwRw8svWSrJ0nmRaBFscQYykW1pxAZGHst1YBpPNmg
+id: embed
+label: Embed
+image_style_mappings:
+  -
+    breakpoint_id: bene.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: embed_l
+  -
+    breakpoint_id: bene.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: embed_m
+  -
+    breakpoint_id: bene.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: embed_s
+breakpoint_group: bene_parent
+fallback_image_style: embed_s

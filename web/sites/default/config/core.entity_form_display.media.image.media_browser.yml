@@ -1,0 +1,47 @@
+uuid: a0e3ec2b-8349-454b-8a97-ef471149fed6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_browser
+    - field.field.media.image.field_media_image
+    - field.field.media.image.media_tags
+    - media.type.image
+_core:
+  default_config_hash: EoSdQOI2JEcD5YQnJZ1davqHL9W4oAdRXrZKI0ERuTU
+id: media.image.media_browser
+targetEntityType: media
+bundle: image
+mode: media_browser
+content:
+  image:
+    type: image_immutable
+    weight: 0
+    settings:
+      preview_image_style: medium
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  media_tags:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_image: true
+  path: true
+  status: true
+  uid: true

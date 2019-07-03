@@ -1,0 +1,12 @@
+uuid: 57577f34-8ee6-462f-bb5e-15dc1608edf0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OM5RNWInIgjTzCl7UarTQt0KR-kIFpkXe_TfUppge7M
+id: bene
+label: bene
+description: ''
+source_type: null
+module: null
+shared_configuration: null

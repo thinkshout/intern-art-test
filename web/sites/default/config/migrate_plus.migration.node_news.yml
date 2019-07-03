@@ -1,0 +1,107 @@
+uuid: a1419cc2-10b9-4bc4-8440-600f54b9344e
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - bene_migrate_google_sheets
+_core:
+  default_config_hash: e5Nj1EW2T1bZJDGT8J-dyexIK4yYwYJFz20R3DCKfGo
+id: node_news
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: bene
+label: 'BENE node news with Google Spreadsheet'
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: google_sheets
+  item_selector: ''
+  urls: 'https://spreadsheets.google.com/feeds/list/1BkC1_65t5D4ZoDhTb0F0wlngPYBcZgwin7v45UYydFc/7/public/values?alt=json'
+  fields:
+    -
+      name: id
+      label: 'Unique identifier'
+      selector: id
+    -
+      name: title
+      label: Title
+      selector: title
+    -
+      name: status
+      label: Status
+      selector: status
+    -
+      name: path
+      label: Path
+      selector: path
+    -
+      name: redirect
+      label: Redirect
+      selector: redirect
+    -
+      name: image
+      label: 'Header Image'
+      selector: headerimage
+    -
+      name: imagealt
+      label: 'Header Image Alt'
+      selector: headerimagealt
+    -
+      name: publishdate
+      label: 'Publish Date'
+      selector: publishdate
+    -
+      name: body
+      label: Body
+      selector: body
+    -
+      name: intro
+      label: Intro
+      selector: intro
+    -
+      name: content
+      label: Content
+      selector: content
+  ids:
+    id:
+      type: integer
+process:
+  type:
+    plugin: default_value
+    default_value: news
+  title: title
+  status: status
+  path/pathauto:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: path
+    -
+      plugin: default_value
+      default_value: 0
+  path/alias: path
+  body/value: body
+  body/format:
+    plugin: default_value
+    default_value: full_html
+  bene_header_media/target_id:
+    plugin: media_import
+    source: image
+    process:
+      bundle: image
+      image/alt: imagealt
+  bene_intro: intro
+  bene_content:
+    plugin: entity_reference_revisions
+    source: content
+    migration: block_paragraphs
+    delimiter: ;
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required:
+    - node_page
+    - block_paragraphs

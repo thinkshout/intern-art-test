@@ -1,0 +1,28 @@
+uuid: 627efcab-c09c-4f1e-8c79-17a4339c44c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - bene_core
+    - system
+  theme:
+    - art_test
+_core:
+  default_config_hash: 1yGgjo5S3ewDVxmhp2Q6YBvQBoujxbdgJt4tVJCX04U
+id: art_test_benesubnavigation
+theme: art_test
+region: content
+weight: -5
+provider: null
+plugin: bene_sub_navigation_block
+settings:
+  id: bene_sub_navigation_block
+  label: 'Bene sub navigation'
+  provider: bene_core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

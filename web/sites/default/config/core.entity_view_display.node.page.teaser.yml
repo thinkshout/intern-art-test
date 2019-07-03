@@ -1,0 +1,44 @@
+uuid: 150b5ca6-8836-4f72-9c61-f33345378380
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.bene_content
+    - field.field.node.page.bene_header_media
+    - field.field.node.page.bene_intro
+    - field.field.node.page.bene_metatags
+    - image.style.tile_m
+    - node.type.page
+  module:
+    - bene_core
+    - media
+    - user
+_core:
+  default_config_hash: 8srDjKql6HboVCLg-W-31jj-vpEUZJTImsAwAO5yWqk
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  bene_header_media:
+    type: media_thumbnail
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: tile_m
+      image_link: content
+    third_party_settings: {  }
+  bene_intro:
+    type: bene_fallback_summary
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: '300'
+    third_party_settings: {  }
+hidden:
+  bene_content: true
+  bene_metatags: true
+  links: true

@@ -1,0 +1,25 @@
+uuid: 8f5a1399-9977-4fe0-bf88-c7c5583d4f46
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bene_background_image_hero
+    - field.storage.block_content.bene_link
+  module:
+    - link
+_core:
+  default_config_hash: 0lwQaFnCQHRTsExE7pbBcfMUMr_5q8BV4dkiAXby14s
+id: block_content.bene_background_image_hero.bene_link
+field_name: bene_link
+entity_type: block_content
+bundle: bene_background_image_hero
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

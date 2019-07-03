@@ -1,0 +1,30 @@
+uuid: 71e30e88-04f6-4fc5-8c5a-2d7e20232f5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.bene_header_media
+    - media.type.image
+    - node.type.listing_page
+_core:
+  default_config_hash: XA_LcMYm5LiuVztB-Apyi2kQL8yirKD1X4Hphztgslc
+id: node.listing_page.bene_header_media
+field_name: bene_header_media
+entity_type: node
+bundle: listing_page
+label: 'Header image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

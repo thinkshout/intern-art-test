@@ -1,0 +1,22 @@
+uuid: 38f314c3-d52e-48bf-99a1-c4661fe24773
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - art_test
+_core:
+  default_config_hash: VkWAPcZFKss6tZAMOJhzaOplsNdaDXAgcUsE0etftoI
+id: art_test_content
+theme: art_test
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

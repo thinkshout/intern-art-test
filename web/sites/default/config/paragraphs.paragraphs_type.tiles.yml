@@ -1,0 +1,11 @@
+uuid: edf1ce6d-7814-420f-8755-fb738400becb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: SKbMxsFNQ2RcvpZLASgKvSbTjvtXWzGEQC5AMsCQMao
+id: tiles
+label: Tiles
+icon_uuid: null
+description: null
+behavior_plugins: {  }

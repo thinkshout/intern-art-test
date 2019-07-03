@@ -1,0 +1,27 @@
+uuid: 444b57db-dc54-4413-92ed-d6ede16be2ca
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - art_test
+_core:
+  default_config_hash: Dhz0ySfDCDtUQ_LaLGOd92K5dly8VURWM1nZjJs1Mvw
+id: art_test_footer
+theme: art_test
+region: site_branding
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

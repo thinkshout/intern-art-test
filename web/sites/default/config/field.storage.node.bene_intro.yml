@@ -1,0 +1,21 @@
+uuid: 63ead195-71f2-488c-86d0-b5340706a804
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: BpdUsC7btdEHllLSswtizRQqJuI-jHv9a1sEe2tcWYY
+id: node.bene_intro
+field_name: bene_intro
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 04a6d942-f4a1-4cd1-9d70-e0897caf4da0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bene_child
+_core:
+  default_config_hash: VkWAPcZFKss6tZAMOJhzaOplsNdaDXAgcUsE0etftoI
+id: bene_child_content
+theme: bene_child
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

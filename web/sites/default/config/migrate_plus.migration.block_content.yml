@@ -1,0 +1,75 @@
+uuid: c9374cd3-dfa2-4a05-b61d-305def638129
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - bene_media
+      - bene_migrate_google_sheets
+_core:
+  default_config_hash: xl1_i7H5FPBA6RbnfVFVV4hvZo3EIm6qB8O87aot7_U
+id: block_content
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: bene
+label: 'Content blocks from Google Spreadsheet'
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: google_sheets
+  item_selector: ''
+  urls: 'https://spreadsheets.google.com/feeds/list/1BkC1_65t5D4ZoDhTb0F0wlngPYBcZgwin7v45UYydFc/8/public/values?alt=json'
+  fields:
+    -
+      name: id
+      label: ID
+      selector: id
+    -
+      name: description
+      label: Description
+      selector: description
+    -
+      name: title
+      label: Title
+      selector: title
+    -
+      name: lead
+      label: Lead
+      selector: lead
+    -
+      name: linkuri
+      label: 'Link URI'
+      selector: linkuri
+    -
+      name: linktitle
+      label: 'Link Title'
+      selector: linktitle
+    -
+      name: media
+      label: Media
+      selector: media
+  ids:
+    id:
+      type: integer
+process:
+  type:
+    plugin: default_value
+    default_value: bene_background_image_hero
+  info: description
+  bene_title: title
+  bene_lead: lead
+  bene_link/uri:
+    plugin: link_url_import
+    source: linkuri
+  bene_link/title: linktitle
+  bene_background_image_hero:
+    plugin: migration
+    source: media
+    migration: media
+destination:
+  plugin: 'entity:block_content'
+migration_dependencies:
+  required:
+    - media

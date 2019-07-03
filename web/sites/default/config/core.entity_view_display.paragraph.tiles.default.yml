@@ -1,0 +1,35 @@
+uuid: c274e7b0-18ad-4937-843c-92a3a97ac6ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tiles.field_tiles
+    - field.field.paragraph.tiles.field_title
+    - paragraphs.paragraphs_type.tiles
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: WnWDOiGcCpjx80giD9KKtX1hz9-5phKNFBFqn6OtRk4
+id: paragraph.tiles.default
+targetEntityType: paragraph
+bundle: tiles
+mode: default
+content:
+  field_tiles:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

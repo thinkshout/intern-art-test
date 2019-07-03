@@ -1,0 +1,11 @@
+uuid: e837fb14-56af-49f3-8c5e-0351e2f576a5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8KGNZ8IyhKNigAuEhQGjKnD8dcOlLSka0qZSr0M3peE
+id: feature_full_width
+label: Feature
+icon_uuid: null
+description: null
+behavior_plugins: {  }

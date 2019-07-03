@@ -1,0 +1,35 @@
+uuid: 002e33a7-6c89-4924-a99e-1d86eb5a7b7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.header
+    - field.field.media.image.field_media_image
+    - field.field.media.image.media_tags
+    - media.type.image
+    - responsive_image.styles.header
+  module:
+    - picture_background_formatter
+_core:
+  default_config_hash: 8EihNVmZZ1h9M6_aBCCOAqkxQ0YstU96MrnUh8PEuj0
+id: media.image.header
+targetEntityType: media
+bundle: image
+mode: header
+content:
+  field_media_image:
+    type: picture_background_formatter_media
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: header
+      selector: hero-image
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  media_tags: true
+  name: true
+  thumbnail: true
+  uid: true

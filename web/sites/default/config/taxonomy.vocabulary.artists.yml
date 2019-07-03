@@ -1,0 +1,8 @@
+uuid: 5ab15714-4858-42f9-8a69-6b10e9351cd9
+langcode: en
+status: true
+dependencies: {  }
+name: Artists
+vid: artists
+description: 'Names of all the Artists that have work in the Gallery'
+weight: 0

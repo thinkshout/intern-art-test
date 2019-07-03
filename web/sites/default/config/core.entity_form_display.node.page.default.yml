@@ -1,0 +1,106 @@
+uuid: 36c03967-4801-48b4-b7f5-4c14c38a8945
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_browser_modal
+    - field.field.node.page.bene_content
+    - field.field.node.page.bene_header_media
+    - field.field.node.page.bene_intro
+    - field.field.node.page.bene_metatags
+    - node.type.page
+  module:
+    - entity_browser
+    - metatag
+    - paragraphs
+    - path
+    - text
+_core:
+  default_config_hash: kIiu1M7WI6t3JI90pmuYcQZWE3bltv4yxaOR2HY_IbY
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  bene_content:
+    type: paragraphs
+    weight: 3
+    settings:
+      title: Section
+      title_plural: Sections
+      edit_mode: closed
+      closed_mode: preview
+      autocollapse: none
+      add_mode: dropdown
+      form_display_mode: thumbnail
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  bene_header_media:
+    type: entity_browser_entity_reference
+    weight: 1
+    settings:
+      entity_browser: media_browser_modal
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: thumbnail
+    third_party_settings: {  }
+    region: content
+  bene_intro:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  bene_metatags:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  promote: true
+  sticky: true

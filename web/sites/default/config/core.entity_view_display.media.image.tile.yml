@@ -1,0 +1,34 @@
+uuid: 1c299cd6-e8f4-4ebc-ac26-a393fff6c6f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.tile
+    - field.field.media.image.field_media_image
+    - field.field.media.image.media_tags
+    - media.type.image
+    - responsive_image.styles.tile
+  module:
+    - responsive_image
+_core:
+  default_config_hash: 4EmezJkiNz-77i_N7euMHkzKqaPL3mp0J5YCHaNoLI0
+id: media.image.tile
+targetEntityType: media
+bundle: image
+mode: tile
+content:
+  field_media_image:
+    type: responsive_image
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: tile
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  media_tags: true
+  name: true
+  thumbnail: true
+  uid: true

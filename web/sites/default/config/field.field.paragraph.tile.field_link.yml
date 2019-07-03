@@ -1,0 +1,25 @@
+uuid: f5bdf80d-8660-4b01-9fb6-b44cac144442
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.tile
+  module:
+    - link
+_core:
+  default_config_hash: mrwd9E6SvhnK9azNk-xYTND_ooKL14WrTNxEuuKfQCc
+id: paragraph.tile.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: tile
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

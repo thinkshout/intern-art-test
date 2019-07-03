@@ -1,0 +1,23 @@
+uuid: 420a197a-0184-4865-97c0-952012870e95
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 0Vk7tLNHVvTUoogEUYt4lTHfgEPplzQjdjUbrP65b_0
+id: standard_link
+label: 'Standard Link'
+description: ''
+attributes: {  }
+matchers:
+  423f5ec9-a14a-485d-844f-6e11f78fe6f9:
+    uuid: 423f5ec9-a14a-485d-844f-6e11f78fe6f9
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles:
+        page: page
+      group_by_bundle: false
+      include_unpublished: false

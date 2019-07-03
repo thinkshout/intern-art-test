@@ -1,0 +1,21 @@
+uuid: 5240f5ee-607a-4abd-87ff-b1d151b3eb1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - node
+_core:
+  default_config_hash: P9e8Lby1Agf37ziMidRTXcHXjJp0HymcJMrlIO2CFhU
+id: node.bene_event_location
+field_name: bene_event_location
+entity_type: node
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

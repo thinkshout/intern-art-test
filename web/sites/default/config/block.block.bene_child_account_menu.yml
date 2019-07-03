@@ -1,0 +1,27 @@
+uuid: a13c2ffe-098b-4e21-8435-3eb963fed815
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - bene_child
+_core:
+  default_config_hash: cDrTj-TeVicUz1wvunZirjELm_lSSfUclo6EsdfOtlA
+id: bene_child_account_menu
+theme: bene_child
+region: secondary_nav
+weight: -2
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

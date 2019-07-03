@@ -1,0 +1,22 @@
+uuid: b946137b-5afa-41c4-8e53-429124e13ca6
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bene_parent
+_core:
+  default_config_hash: lhCo5pUBqPDlmJ7QGCZ2r_Ax0aDvimWMwgBq4DpTei4
+id: bene_parent_breadcrumbs
+theme: bene_parent
+region: secondary_nav
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

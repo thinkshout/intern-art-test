@@ -1,0 +1,25 @@
+uuid: 79d4c7c4-bef0-4749-8881-bc7cf44e0632
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.feature_full_width
+  module:
+    - link
+_core:
+  default_config_hash: cM1vI-eDQCWsae0O82NJKw6uE7dbyFzphLCW4Ku2Nq0
+id: paragraph.feature_full_width.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: feature_full_width
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

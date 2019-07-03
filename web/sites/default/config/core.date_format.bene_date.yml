@@ -1,0 +1,10 @@
+uuid: e5921c6c-9ccf-44b1-a37c-241b83adde68
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JEOOfxhGx6bWBOem57IF1omnRJn97EPJAp44bXa5ELo
+id: bene_date
+label: 'Bene Date'
+locked: false
+pattern: 'F j, Y'

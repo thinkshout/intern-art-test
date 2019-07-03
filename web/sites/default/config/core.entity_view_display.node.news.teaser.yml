@@ -1,0 +1,55 @@
+uuid: 679ee4e2-6133-4b97-a8a9-a0c07ffce0d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news.bene_content
+    - field.field.node.news.bene_date
+    - field.field.node.news.bene_header_media
+    - field.field.node.news.bene_intro
+    - field.field.node.news.bene_metatags
+    - image.style.tile_m
+    - node.type.news
+  module:
+    - bene_core
+    - datetime
+    - media
+    - user
+_core:
+  default_config_hash: 4ndsrsgEdu5dc_Hfq5sAOxNjHvvSlTFZqBmZxYAYhtU
+id: node.news.teaser
+targetEntityType: node
+bundle: news
+mode: teaser
+content:
+  bene_date:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: bene_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  bene_header_media:
+    type: media_thumbnail
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: tile_m
+      image_link: content
+    third_party_settings: {  }
+  bene_intro:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: '300'
+    third_party_settings: {  }
+    type: bene_fallback_summary
+    region: content
+hidden:
+  bene_content: true
+  bene_metatags: true
+  links: true

@@ -1,0 +1,20 @@
+uuid: b4f4630a-a0f8-4353-b888-0e72b54b3a84
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bene_child
+_core:
+  default_config_hash: jDeecEvblwGk8sZSGNtG6be6UVHXpehWhEZSiMgDcZU
+id: bene_child_local_actions
+theme: bene_child
+region: content
+weight: -9
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

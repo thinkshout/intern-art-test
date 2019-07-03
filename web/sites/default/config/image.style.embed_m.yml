@@ -1,0 +1,17 @@
+uuid: 9db3c5a8-e421-4473-a9e8-2198b64bc113
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: i1LRd3hSd3CEoIeQNU69YVZ6r6R1DOfeJV2RCerB06Y
+name: embed_m
+label: Embed-M
+effects:
+  c2a4fee1-ae05-4839-b983-88728e65271d:
+    uuid: c2a4fee1-ae05-4839-b983-88728e65271d
+    id: image_scale
+    weight: 1
+    data:
+      width: 714
+      height: null
+      upscale: false

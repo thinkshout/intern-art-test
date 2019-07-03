@@ -1,0 +1,30 @@
+uuid: 4c6dfd21-fe51-403a-85b2-c0f9d31d45b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.tile
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    restricted_html: restricted_html
+    basic_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: 3gSGm1NKI9ryfd_lQSgpZpeUdekW3VvYlGBZV_y-T8Q
+id: paragraph.tile.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: tile
+label: Text
+description: '(suggested word count: ≤ 40)'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

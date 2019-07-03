@@ -1,0 +1,19 @@
+uuid: bdd0c71b-59c1-4d5e-9ee9-ecad4eca300d
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: 1HUG1RZZ6MiIiasGifKFP0wSqA-KO5av-NQ64Lpn0sg
+name: tile_s
+label: Tile-S
+effects:
+  5a88bfa9-4120-4f5a-8ec9-4d48c96ead62:
+    uuid: 5a88bfa9-4120-4f5a-8ec9-4d48c96ead62
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 240
+      crop_type: focal_point

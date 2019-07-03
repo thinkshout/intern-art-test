@@ -1,0 +1,30 @@
+uuid: 115f974a-49ca-452a-8533-963916c80e8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.bene_header_media
+    - media.type.image
+    - node.type.news
+_core:
+  default_config_hash: EGfGijZRO5nLJNr6b-LjmgLgRQjn_NYaxoY8Er_WjrU
+id: node.news.bene_header_media
+field_name: bene_header_media
+entity_type: node
+bundle: news
+label: 'Header image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: a540d98d-d2f3-41c5-92e6-62dca4a2c7f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: vU5kddhWMcBTOYVorE1dXohpFkUPB6uWFQku8IVhQTk
+name: feature_full_width_xl
+label: 'Feature Full Width-XL'
+effects:
+  372167df-cb32-4955-bad9-6dd916b3f85d:
+    uuid: 372167df-cb32-4955-bad9-6dd916b3f85d
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1800
+      height: 688
+      crop_type: focal_point

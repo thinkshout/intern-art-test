@@ -1,0 +1,30 @@
+uuid: 1862841d-5538-4c9a-8fbe-4ac056cd5a6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.rich_text
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: full_html
+    restricted_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: 2b5LD07VaV474cgW2MEC3U9x9ZugnMzn2FKU0MPPwyA
+id: paragraph.rich_text.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: rich_text
+label: Text
+description: "<p>This is just text! You can format it or make it a quote here. You can add bullets, style it as a header, or create a button. You can also insert an in-line image using the same “header image” functionality that is outlined above. (suggested word count: ≤ 400)</p>\r\n<p>To create a button type in the text that you would like to be displayed. Hyperlink the text and link it to an internal page or an external page/resource. Then with it still highlighted, you can head back to the style drop down and select button. Voila!</p>"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

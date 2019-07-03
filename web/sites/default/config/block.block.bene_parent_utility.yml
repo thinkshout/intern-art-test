@@ -1,0 +1,27 @@
+uuid: 98060d52-2efc-42cd-9913-595f00f66411
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.utility
+  module:
+    - system
+  theme:
+    - bene_parent
+_core:
+  default_config_hash: mE4_mP5i88qAR3-_pA2WxTOfPXqd2SJwTPTwGMOaDZ0
+id: bene_parent_utility
+theme: bene_parent
+region: primary_nav
+weight: -7
+provider: null
+plugin: 'system_menu_block:utility'
+settings:
+  id: 'system_menu_block:utility'
+  label: Utility
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

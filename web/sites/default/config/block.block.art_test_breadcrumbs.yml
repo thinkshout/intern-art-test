@@ -1,0 +1,22 @@
+uuid: d3fab597-aade-40c4-a097-6bac65d83659
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - art_test
+_core:
+  default_config_hash: xaUPugGzCPDH1SwAmOna1kaLo_8w9hdMuAM5bOVtH4I
+id: art_test_breadcrumbs
+theme: art_test
+region: secondary_nav
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

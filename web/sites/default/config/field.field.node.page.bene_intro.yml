@@ -1,0 +1,31 @@
+uuid: 36f5b6a6-36c7-4bc3-a1aa-8d7bd21fc63a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.bene_intro
+    - node.type.page
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    restricted_html: restricted_html
+    basic_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: 8IwOOWNBB6UOR0n5aMMls3MhijIzgJQUBZB-pyDHMcs
+id: node.page.bene_intro
+field_name: bene_intro
+entity_type: node
+bundle: page
+label: Introduction
+description: 'This can be used as a one line intro text on the homepage or else an entire block on an interior page. It is wider than the other text content and allows for a feature or more prominence.  (suggested word count: ≤ 150)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
